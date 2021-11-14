@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #66AF31;
+}
+
+
+.form-login {
+   
+    display: flex;
+    justify-content: space-around;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.2);
+    background-color: white;
+    border-bottom: 2px solid gray;
+    padding: 0px 25px;
+    flex-direction: column;
+    max-width: 200px;
+  
+    min-height: 45vh;
+}
+
+.form-input {
+    margin-top: -25px;
+}
+
+h1 {
+    color: #1B3409;
+    text-align: center;
+    font-size: 1.8rem;
+    position: relative;
+    font-weight: 600;
+    padding: 5px;
+}
+
+
+h1::before {
+
+    position: absolute;
+    content: '';
+    width: 45%;
+    height: 4px;
+    background: linear-gradient(to right,  #3c7a0f 0%, #66b032 100%);
+    bottom: 0px;
+    border-radius: 8px;
+    left: 0;
+}
+h1::after {
+    position: absolute;
+    content: '';
+    width: 45%;
+    height: 4px;
+    background: linear-gradient(to right, #66b032 0%, #3c7a0f 100%);
+ 
+    top: 0px;
+    border-radius: 8px;
+    right: 0;
+}
+
+.form-input input {
+    width: 100%;
+    
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.form-input input:focus{
+    transition: 0.15s ease-in;
+    border-left: 3px solid #66b032 !important;
+}
+
+.form-input input:focus::placeholder {
+    transition: 0.6s ease-in all;
+    color: rgb(0, 0, 0);
+}
+
+.form-input input::placeholder {
+    padding: 5px;
+    color: rgb(0, 0, 0, 0.5);
+}
+
+.form-login .btn {
+    color: white;
+    font-weight: 600;
+    background: linear-gradient(to right, #66b032 0%, #517c33 100%);
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    width: 100%;
+    cursor: pointer;
+}

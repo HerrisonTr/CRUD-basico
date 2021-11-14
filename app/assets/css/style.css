@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.container-geral {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    background-color: grey;
+
+}
+
+.navbar{
+    flex-flow: row wrap;
+    
+    justify-content: flex-start ;
+    display: flex;
+    padding: 0 10px;
+    flex-direction: column;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.2);
+    background-color: #1B3409;
+    min-height: 100vh;
+    max-height: 100%;
+   
+}
+
+.item-menu:first-child{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+i {
+    font-size: 5rem;
+    background-color: honeydew;
+}
+
+.navbar a{
+    
+    font-size: 2rem;
+    background-color: #9BD770;
+    color:  white;
+    text-decoration: none;
+    border-radius: 2px; 
+}
+
+
+
+.item-menu {
+    
+    margin: 0.5rem 0;
+       
+}
+
+.main{
+    overflow: auto;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.2);
+    margin: 0 auto;
+    width: 81%;
+    min-height: 95vh;
+    background-color: blanchedalmond;
+}
+
+.main section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items:center;
+    height: 80vh;
+    width: 97%;
+    min-height: 70vh;
+}
+
+.main h1{
+    text-align: center;
+}
+
+.card {
+    border-radius: 4px;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.2);
+    background-color: tomato;
+    width: 30%;
+    min-height:150px ;
+    margin-top: 10px;
+}
